@@ -1,0 +1,179 @@
+.explorepage{
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.explorepage h1 {
+    color: white;
+}
+
+.xploresearchsection{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.searchcontainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
+    align-items: center;
+    max-width: 500px;
+    justify-content: center;
+}
+
+.searchcontainer input {
+    width: 100%;
+    height: 40px;
+    padding: 10px 40px; /* Adjusted for the icon */
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s ease-in-out;
+}
+
+.searchcontainer input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0px 0px 8px rgba(76, 175, 80, 0.5);
+}
+
+.searchcontainer label{
+    color: white;
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.searchcontainer::placeholder{
+    font-size: 12px;
+}
+
+/* Search Icon */
+.searchcontainer i {
+    position: absolute;
+    left: 15px; /* Positioning inside the input */
+    font-size: 18px;
+    color: #888;
+}
+
+/* Tab Section */
+.xtabsection {
+    display: flex;
+    width: 100%; /* Ensure full width */
+    height: 50px;
+    margin-top: 40px;
+    justify-content: space-between;
+    color: white;
+}
+
+/* Left Section */
+.tabsectionleft {
+    flex: 1;    
+    font-size: 2em;
+    display: flex; /* Align the content */
+    align-items: center; /* Align vertically */
+    justify-content: flex-start; /* Align to the left */
+    transition: all 0.3s ease;
+}
+
+/* Right Section */
+.tabsectionright {
+    flex: 1;  
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+    align-items: center; /* Align the tabs vertically */
+}
+
+.tabsectionright ul {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0; /* Remove any default padding */
+    list-style: none; /* Remove the bullet points */
+}
+
+.tabsectionright ul li {
+    list-style: none; /* Ensure there are no bullet points */
+    cursor: pointer;
+}
+
+
+/* Tab link style */
+.tabsectionright ul li a {
+    list-style: none;
+    cursor: pointer;
+    color: #08b878; 
+    text-decoration: none; 
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Remove underline effect */
+.tabsectionright ul li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 1px; 
+    width: 0%;
+    height: 3px;
+    background-color: #FFDE59;
+    transition: all 0.2s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.tabsectionright ul li a:hover::after {
+    width: 100%; /* Underline will appear on hover */
+}
+
+.tabsectionright ul li a:hover {
+    color: #08b878; /* Slightly darker shade on hover */
+}
+
+/* Active tab styling */
+.tabsectionright ul li a.active {
+    color: white; /* Keep the text white for active tab */
+}
+
+.tabsectionleft, .tabsectionright ul li {
+    transition: opacity 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+
+
+
+.content-section {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+ 
+/*Event section*/
+
+#eventsSection{
+    width: 80%;
+    background-color: lightcoral;
+    margin-top: 20px;
+    height: auto;
+
+}
+
+#newsSection{
+    width: 80%;
+    background-color: lightgreen;
+    margin-top: 20px;
+    height: auto;
+
+}
