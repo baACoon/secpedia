@@ -3,8 +3,8 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 
 $this->title = 'HOME | SEC';
-$this->registerCssFile('@web/css/home.css'); 
-$this->registerCssFile('@web/css/article.css');
+$this->registerCssFile('@web/css/home/home.css'); 
+$this->registerCssFile('@web/css/homearticle/article.css');
 $this->registerCssFile('@web/css/modal/modal.css');
 $this->registerCssFile('@web/css/modal/articlemodal.css');
 $this->registerJsFile('@web/modal/modal.js', ['depends' => [yii\web\JqueryAsset::class]]);

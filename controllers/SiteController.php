@@ -24,5 +24,10 @@ class SiteController extends Controller
     {
         return $this->render('announcementpage/announcement');
     }
+
+    public function actionEvents()
+    {
+        return $this->render('eventpage/events');
+    }
 }
 
